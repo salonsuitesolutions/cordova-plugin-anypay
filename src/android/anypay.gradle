@@ -1,0 +1,28 @@
+repositories{
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    compile(name: 'anypay', ext: 'aar')
+    compile 'com.android.support:percent:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile('com.squareup.retrofit2:converter-gson:2.3.0') {
+        exclude module: 'gson'
+    }
+    compile('com.squareup.retrofit2:converter-simplexml:2.3.0') {
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+        exclude group: 'xpp3', module: 'xpp3'
+    }
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}

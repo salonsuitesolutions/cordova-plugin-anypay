@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-anypay",
+  "version": "0.1.0",
+  "description": "Cordova plugin for AnyPay SDK (c) 2018 AnywhereCommerce Inc.",
+  "cordova": {
+    "id": "cordova-plugin-anypay",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Ankit Gupta, AnywhereCommerce Inc.",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amplogik/cordova-plugin-anypay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amplogik/cordova-plugin-anypay/issues"
+  },
+  "homepage": "https://github.com/amplogik/cordova-plugin-anypay#readme"
+}
